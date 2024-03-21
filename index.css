@@ -1,0 +1,220 @@
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: #3686bd;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: green;
+}
+
+aside {
+    height: 50%;
+    width: 50%;
+    
+}
+
+button {
+    border-radius: 5px 0px 5px 0px;
+    background-color: #398CBF;
+    border: none;
+    color: white;
+    padding: 5% 10%;
+    text-align: center;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+p {
+    font-size: 100%;
+    display: contents;
+}
+
+.aside1 {
+    background-color: #3686bd;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.aside2 {
+    background-color: #ffffff;
+    border-radius: 0px 30px 30px 0px;
+}
+
+input:not([type="checkbox"]) {
+    border-radius: 5px 0px 5px 0px;
+    border-color: #F2F2F2;
+    border-style: solid;
+    width: 94%;
+    height: 50%;
+}
+
+input:not([type="checkbox"]):focus {
+    outline: solid green;
+    outline-width: thin;
+}
+
+.inputEmail {
+    width: 97%;
+}
+
+.inputPassword {
+    width: calc(100% - 20px);
+}
+.inputPassword::after{
+    position: absolute;
+    content: url('verified.png');
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+}
+
+body,
+html {
+    background-color: #7EF2F2;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 70%;
+    height: 140%;
+    margin: auto;
+    align-items: center;
+}
+
+.informationBar {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: max-content;
+    grid-row-gap: 2%;
+    padding: 10%;
+    height: 90%;
+    grid-template-areas:
+    "informationTitleBar"
+    "informationTextBar"
+    "haveAnAccountButtonBar";
+}
+
+.informationTitleBar {
+    grid-area: informationTitleBar;
+    color: #F2F2F2;
+    font-weight: bold;
+    font-size: x-large;
+    padding-bottom: 10%;
+}
+
+.informationTextBar {
+    grid-area: informationTextBar;
+    text-align: justify;
+    color: #c3d3e0;
+    font-size: 100%;
+    grid-row-end: none;
+    padding-bottom: 95%;
+}
+
+.haveAnAccountButtonBar {
+    grid-area: haveAnAccountButtonBar;
+    align-items: center;
+}
+
+.haveAnAccountButton {
+    background-color: white;
+    color: black;
+    font-size: 80%;
+    padding: 5% 6%;
+}
+
+.registerForm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: max-content;
+    padding: 10%;
+    height: 90%;
+    grid-column-gap: 5%;
+    grid-row-gap: 2%;
+    grid-template-areas:
+        "registerFormTitle registerFormTitle"
+        "firstNameGrid lastNameGrid"
+        "emailGrid emailGrid"
+        "passwordGrid confirmPasswordGrid"
+        "termsAndConditionsGrid termsAndConditionsGrid"
+        "registerButtonGrid registerButtonGrid";
+}
+
+.registerFormFilds {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    color: #9b9b9b;
+    font-weight: bold;
+    font-size: small;
+
+
+}
+
+.registerFormTitle {
+    grid-area: registerFormTitle;
+    text-align: justify;
+    color: #3686bd;
+    font-weight: bold;
+    font-size: x-large;
+    padding-bottom: 10%;
+}
+
+.firstNameGrid {
+    grid-area: firstNameGrid;
+}
+
+.lastNameGrid {
+    grid-area: lastNameGrid;
+}
+
+.emailGrid {
+    grid-area: emailGrid;
+
+}
+
+.passwordGrid {
+    grid-area: passwordGrid;
+    position: relative;
+}
+.password{
+    grid-area: password;
+}
+.icon1{
+    grid-area: icon1;
+}
+
+.confirmPasswordGrid {
+    grid-area: confirmPasswordGrid;
+}
+
+.termsAndConditionsGrid {
+    grid-area: termsAndConditionsGrid;
+    flex-direction: row;
+    align-items: baseline;
+    color: #1d1b1b;
+    font-weight: bold;
+    grid-row-end: none;
+}
+
+.registerButtonGrid {
+    grid-area: registerButtonGrid;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+
